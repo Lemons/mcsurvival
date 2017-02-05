@@ -20,6 +20,7 @@ public class JoinListener implements Listener {
 
         Stream.of(
                 ChatColor.YELLOW + "Welcome to theminecoder's survival server!",
+                "",
                 ChatColor.YELLOW + "This server comprised of an open source plugin",
                 ChatColor.YELLOW + "which anyone can edit if they wish to.",
                 ChatColor.YELLOW + "Check it out here: " + ChatColor.AQUA + "https://github.com/theminecoder/mcsurvival"
