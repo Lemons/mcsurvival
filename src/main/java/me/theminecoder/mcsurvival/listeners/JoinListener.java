@@ -21,7 +21,7 @@ public class JoinListener implements Listener {
         Stream.of(
                 ChatColor.YELLOW + "Welcome to theminecoder's survival server!",
                 "",
-                ChatColor.YELLOW + "This server comprised of an open source plugin which anyone can edit if they wish to.",
+                ChatColor.YELLOW + "This server is comprised of an open source plugin which anyone can edit if they wish to.",
                 ChatColor.YELLOW + "Check it out here: " + ChatColor.AQUA + "https://github.com/theminecoder/mcsurvival"
         ).forEach(event.getPlayer()::sendMessage);
     }
