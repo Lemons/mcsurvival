@@ -29,7 +29,7 @@ public class JoinListener implements Listener {
 
         Player player = event.getPlayer();
         if (!player.hasPlayedBefore()) {
-            player.sendMessage("§bSince we see this is your first time, you have received the starter kit!");
+            player.sendMessage(ChatColor.BLUE + "Since we see this is your first time, you have received the starter kit!");
             player.getInventory().addItem(new ItemStack(Material.STONE_PICKAXE));
             player.getInventory().addItem(new ItemStack(Material.STONE_AXE));
             player.getInventory().addItem(new ItemStack(Material.APPLE, 5));
