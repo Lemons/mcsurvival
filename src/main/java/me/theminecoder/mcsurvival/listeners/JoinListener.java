@@ -22,13 +22,7 @@ public class JoinListener implements Listener {
         event.setJoinMessage(null);
         Player player = event.getPlayer();
         if(!player.hasPlayedBefore()) {
-            Stream.of(
-                    ChatColor.YELLOW + "Welcome to theminecoder's survival server!",
-                    "",
-                    ChatColor.YELLOW + "This server is comprised of an open source plugin which anyone can edit if they wish to.",
-                    ChatColor.YELLOW + "Check it out here: " + ChatColor.AQUA + "https://github.com/theminecoder/mcsurvival",
-                    ChatColor.BLUE + "Since we see this is your first time, you have received the starter kit!"
-            ).forEach(event.getPlayer()::sendMessage);
+            player.sendMessage("§bSince we see this is your first time, you have received the starter kit!");
             player.getInventory().addItem(new ItemStack(Material.STONE_PICKAXE));
             player.getInventory().addItem(new ItemStack(Material.STONE_AXE));
             player.getInventory().addItem(new ItemStack(Material.APPLE, 5));
